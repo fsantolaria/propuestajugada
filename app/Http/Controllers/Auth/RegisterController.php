@@ -32,8 +32,8 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    #protected $redirectTo = RouteServiceProvider::HOME;
-    protected $redirectTo = '/';
+    protected $redirectTo = RouteServiceProvider::HOME;
+    
 
     /**
      * Create a new controller instance.
@@ -68,19 +68,12 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        $data['confirmation_code'] = Str::random(25);
         $user= User::create([
             'name' => $data['name'],
             'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-            'confirmation_code' => $data['confirmation_code']
+            'password' => Hash::make($data['password'])
         ]);
 
-        // Send confirmation code
-        Mail::send('emails.confirmation_code', $data, function($message) use ($data) {
-            $message->to($data['email'], $data['name'])->subject('Por favor confirma tu correo');
-        });
-        return $user;
     }
 
 }
