@@ -14,14 +14,15 @@ class PaymentController extends Controller
     public function payment()
     {
         $availablePlans =[
-           'webdevmatics_monthly' => "Monthly",
-           'webdevmatics_yearly' => "Yearly",
+           '' => "Plan Bronce",
+           '' => "Plan Plata",
+		   '' => "Plan Oro",
         ];
         $data = [
             'intent' => auth()->user()->createSetupIntent(),
             'plans'=> $availablePlans
         ];
-        return view('payment1')->with($data);
+        return view('suscription')->with($data);
     }
 
     public function subscribe(Request $request)
