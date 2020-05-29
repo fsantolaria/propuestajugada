@@ -14,9 +14,9 @@ class PaymentController extends Controller
     public function payment()
     {
         $availablePlans =[
-           '' => "Plan Bronce",
-           '' => "Plan Plata",
-		   '' => "Plan Oro",
+           'prod_HJDOEtT0nNODDT' => "Plan Bronce",
+           'prod_HJDScLVGvt3N4M' => "Plan Plata",
+		   'prod_HJHa11jKT4zJPH' => "Plan Oro",
         ];
         $data = [
             'intent' => auth()->user()->createSetupIntent(),
