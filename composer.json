@@ -20,8 +20,10 @@
         "league/oauth2-google": "^3.0",
         "lucascudo/laravel-pt-br-localization": "^1.1",
         "phpmailer/phpmailer": "^6.1",
+        "santigraviano/laravel-mercadopago": "^1.0",
         "srmklive/paypal": "^1.7",
-        "stripe/stripe-php": "^7.36"
+        "stripe/stripe-php": "^7.36",
+        "twbs/bootstrap": "^4.5"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
