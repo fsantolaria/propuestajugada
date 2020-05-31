@@ -75,7 +75,7 @@
                     @auth
                         <a href="{{ url('/home') }}">Inicio</a>
                     @else
-                        <a href="{{ route('login') }}">Inicie Sesión</a>
+                        <a href="{{ route('login') }}">Inicio</a>
 
                         @if (Route::has('register'))
                             <a href="{{ route('register') }}">Sucribirse</a>
@@ -85,9 +85,19 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="/assets/img/sidebar-1" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="/assets/img/sidebar-2" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="/assets/sidebar-3" alt="Third slide">
+                      </div>
+                    </div>
+                  </div>
 
                 <div class="links">
 
