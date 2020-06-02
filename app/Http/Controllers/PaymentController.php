@@ -3,6 +3,22 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use PayPal\Api\Amount;
+use PayPal\Api\Details;
+use PayPal\Api\Item;
+
+/** All Paypal Details class **/
+use PayPal\Api\ItemList;
+use PayPal\Api\Payer;
+use PayPal\Api\Payment;
+use PayPal\Api\PaymentExecution;
+use PayPal\Api\RedirectUrls;
+use PayPal\Api\Transaction;
+use PayPal\Auth\OAuthTokenCredential;
+use PayPal\Rest\ApiContext;
+use Redirect;
+use Session;
+use URL;
 
 class PaymentController extends Controller
 {
@@ -22,9 +38,7 @@ class PaymentController extends Controller
         $this->apiContext->setConfig($payPalConfig['settings']);
     }
 
-    // ...
-
-    public function payWithPayPal()
+       public function payWithPayPal()
     {
         $payer = new Payer();
         $payer->setPaymentMethod('paypal');
@@ -82,5 +96,7 @@ class PaymentController extends Controller
         }
 
         $status = 'Lo sentimos! El pago a través de PayPal no se pudo realizar.';
-        return redirect('/results')->with(compact('status')
+        return redirect('/results')->with(compact('status');
+    }
 }
+
