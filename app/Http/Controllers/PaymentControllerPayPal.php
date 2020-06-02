@@ -22,7 +22,7 @@ use Redirect;
 use Session;
 use URL;
 
-class PaymentController extends Controller
+class PaymentControllerPayPal extends Controller
 {
     private $apiContext;
 
