@@ -6,37 +6,81 @@ use Illuminate\Http\Request;
 
 class PaymentController extends Controller
 {
-    function __construct()
+    private $apiContext;
+
+    public function __construct()
     {
-        $this->middleware('auth');
+        $payPalConfig = Config::get('paypal');
+
+        $this->apiContext = new ApiContext(
+            new OAuthTokenCredential(
+                $payPalConfig['client_id'],
+                $payPalConfig['secret']
+            )
+        );
+
+        $this->apiContext->setConfig($payPalConfig['settings']);
     }
 
-    public function payment()
+    // ...
+
+    public function payWithPayPal()
     {
-        $availablePlans =[
-           'prod_HJDOEtT0nNODDT' => "Plan Bronce",
-           'prod_HJDScLVGvt3N4M' => "Plan Plata",
-		   'prod_HJHa11jKT4zJPH' => "Plan Oro",
-        ];
-        $data = [
-            'intent' => auth()->user()->createSetupIntent(),
-            'plans'=> $availablePlans
-        ];
-        return view('suscription')->with($data);
+        $payer = new Payer();
+        $payer->setPaymentMethod('paypal');
+
+        $amount = new Amount();
+        $amount->setTotal('3.99');
+        $amount->setCurrency('USD');
+
+        $transaction = new Transaction();
+        $transaction->setAmount($amount);
+        // $transaction->setDescription('See your IQ results');
+
+        $callbackUrl = url('/paypal/status');
+
+        $redirectUrls = new RedirectUrls();
+        $redirectUrls->setReturnUrl($callbackUrl)
+            ->setCancelUrl($callbackUrl);
+
+        $payment = new Payment();
+        $payment->setIntent('sale')
+            ->setPayer($payer)
+            ->setTransactions(array($transaction))
+            ->setRedirectUrls($redirectUrls);
+
+        try {
+            $payment->create($this->apiContext);
+            return redirect()->away($payment->getApprovalLink());
+        } catch (PayPalConnectionException $ex) {
+            echo $ex->getData();
+        }
     }
 
-    public function subscribe(Request $request)
+    public function payPalStatus(Request $request)
     {
-        $user = auth()->user();
-        $paymentMethod = $request->payment_method;
+        $paymentId = $request->input('paymentId');
+        $payerId = $request->input('PayerID');
+        $token = $request->input('token');
 
-        $planId = $request->plan;
-        $user->newSubscription('main', $planId)->create($paymentMethod);
+        if (!$paymentId || !$payerId || !$token) {
+            $status = 'Lo sentimos! El pago a través de PayPal no se pudo realizar.';
+            return redirect('/paypal/failed')->with(compact('status'));
+        }
 
-        return response([
-            'success_url'=> redirect()->intended('/')->getTargetUrl(),
-            'message'=>'success'
-        ]);
+        $payment = Payment::get($paymentId, $this->apiContext);
 
-    }
+        $execution = new PaymentExecution();
+        $execution->setPayerId($payerId);
+
+        /** Execute the payment **/
+        $result = $payment->execute($execution, $this->apiContext);
+
+        if ($result->getState() === 'approved') {
+            $status = 'Gracias! El pago a través de PayPal se ha ralizado correctamente.';
+            return redirect('/results')->with(compact('status'));
+        }
+
+        $status = 'Lo sentimos! El pago a través de PayPal no se pudo realizar.';
+        return redirect('/results')->with(compact('status')
 }
