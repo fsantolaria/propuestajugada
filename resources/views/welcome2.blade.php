@@ -75,30 +75,30 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <img class="bd-placeholder-img" src="/assets/img/sidebar-5.jpg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"></img>
         <div class="container">
           <div class="carousel-caption text-left">
-            <h1>Plan Bronce</h1>
-            <p>Plan Bronce es un plan de Riesgo, se juega semanalmente un numero de una importarte loteria mundial.</p>
+            <h1>Planes Disponibles</h1>
+            <p>Plan Bronce, Plata y Oro son planes de Riesgo, que  brindan la posibilidad de jugar semanalmente un numero de una importarte loteria mundial, ademas de ahorrar.</p>
             <p><a class="btn btn-lg btn-primary" href="{{ route('register') }}" role="button">Suscribirse</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" src="/assets/img/sidebar-5.jpg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <img class="bd-placeholder-img" src="/assets/img/sidebar-7.jpg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"></img>
         <div class="container">
           <div class="carousel-caption">
-            <h1>Plan Plata</h1>
-            <p>Plan Plata es un plan de Riesgo, se juega semanalmente dos numeros de una importarte loteria mundial.</p>
+            <h1>Servicios</h1>
+            <p>En base a los planes de suscripción se </p>
             <p><a class="btn btn-lg btn-primary" href="{{ route('register') }}" role="button">Suscribirse</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <img class="bd-placeholder-img" src="/assets/img/sidebar-9.jpg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"></img>
         <div class="container">
           <div class="carousel-caption text-right">
-            <h1>Plan Oro</h1>
+            <h1>Seguros</h1>
             <p>Plan Plata es un plan de Riesgo, se juega semanalmete dos numeros de una importarte loteria mundial.</p>
             <p><a class="btn btn-lg btn-primary" href="{{ route('register') }}" role="button">Suscribirse</a></p>
           </div>
@@ -125,19 +125,19 @@
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></svg>
         <h2>Plan Bronce</h2>
         <p>Plan Bronce es un plan de Riesgo, se juega un numero de una importarte loteria mundial.</p>
         <p><a class="btn btn-secondary" href="#" role="button">Plan Bronce &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></svg>
         <h2>Plan Plata</h2>
         <p>Plan Plata es un plan de Riesgo, se juega tres numero de una importarte loteria mundial.</p>
         <p><a class="btn btn-secondary" href="#" role="button">Plan Plata &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></svg>
         <h2>Plan Oro</h2>
         <p>Plan Oro es un plan de Riesgo, se juega seis numeros de una importarte loteria mundial.</p>
         <p><a class="btn btn-secondary" href="#" role="button">Plan Oro &raquo;</a></p>
@@ -151,11 +151,11 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">Que Harias con 10.000.000 U$S <span class="text-muted">It’ll blow your mind.</span></h2>
-        <p class="lead">Propuesta Jugada te da la posibilidad de participar de sorteos en las principales loterias del mundo y poder capitalizar mucho dinero con una minima inversion.</p>
+        <h2 class="featurette-heading">¿ Que Harías con 10.000.000 U$S ? <span class="text-muted">Suscribase y sea uno de nuestros afortunados ganadores</span></h2>
+        <p class="lead">Propuesta Jugada te da la posibilidad de participar de sorteos en las principales loterias del mundo y poder capitalizar dinero con una minima inversión.</p>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="/assets/img/money-millon.jpg" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"></img>
       </div>
     </div>
 
@@ -163,11 +163,11 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <h2 class="featurette-heading">Lo importante de estar protegido <span class="text-muted"></span></h2>
+        <p class="lead">Prouesta Jugada por tu suscripción ademas de capitalizar dinero piensa en tu capital mas preciado tu familia facilitandote un seguro</p>
       </div>
       <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="/assets/img/family-seguro.jpg" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"></img>
       </div>
     </div>
 
@@ -175,11 +175,11 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <h2 class="featurette-heading">Nadie te da mas <span class="text-muted">Revisa todo nuestros beneficios</span></h2>
+        <p class="lead">Suscribite y empezá a disfrutar de lo que tenemos preparado para vos</p>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="/assets/img/gift-sorpresa.jpg" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"></svg>
       </div>
     </div>
 

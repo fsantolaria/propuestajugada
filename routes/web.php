@@ -21,6 +21,6 @@ Route::get('/', function () {
 Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/paypal/pay', 'PaymentController@payWithPayPal');
-Route::get('/paypal/status', 'PaymentController@payPalStatus');
+#Route::get('/paypal/pay', 'PaymentControllerPayPal@payWithPayPal');
+#Route::get('/paypal/status', 'PaymentControllerPayPal@payPalStatus');
 
