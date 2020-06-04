@@ -5,10 +5,13 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\URL;
+#use App\Traits\CaptchaTrait;
+
 
 
 class AppServiceProvider extends ServiceProvider
 {
+    #use CaptchaTrait;
     /**
      * Register any application services.
      *
@@ -30,5 +33,12 @@ class AppServiceProvider extends ServiceProvider
             URL::forceScheme('https');
         }
         Schema::defaultStringLength(191);
+        // Validator::extend('captcha', function($attribute, $value, $parameters, $validator) {
+        //     if(!empty($value) && $this->captchaCheck($value) == true)
+        //     {
+        //         return true;
+        //     }
+        //     return false;
+        // });
     }
 }
