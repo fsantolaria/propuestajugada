@@ -74,7 +74,7 @@
         <h4 class="my-0 font-weight-normal">Plan Bronce</h4>
       </div>
       <div class="card-body">
-        <h1 class="card-title pricing-card-title">U$S 9,90<small class="text-muted">/ mes</small></h1>
+        <h1 class="card-title pricing-card-title">$ 9,90<small class="text-muted">/ mes</small></h1>
         <ul class="list-unstyled mt-3 mb-4">
           <li>1 número de loteria</li>
           <li>Seguro Familiar</li>
@@ -89,7 +89,7 @@
         <h4 class="my-0 font-weight-normal">Plan Plata</h4>
       </div>
       <div class="card-body">
-        <h1 class="card-title pricing-card-title">U$S 18,90 <small class="text-muted">/ mes</small></h1>
+        <h1 class="card-title pricing-card-title">$ 18,90 <small class="text-muted">/ mes</small></h1>
         <ul class="list-unstyled mt-3 mb-4">
           <li>2 numeros de Loteria</li>
           <li>Seguro Familiar</li>
@@ -103,7 +103,8 @@
       <div class="card-header">
         <h4 class="my-0 font-weight-normal">Plan Oro</h4>
       </div>
-      <div class="card-body">U$S 28,90 <small class="text-muted">/ mes</small></h1>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$ 28,90 <small class="text-muted">/ mes</small></h1>
         <ul class="list-unstyled mt-3 mb-4">
           <li>3 numeros de loteria</li>
           <li>Seguro Familiar</li>

@@ -18,8 +18,7 @@ Route::get('/', function () {
     return view('welcome2');
 });
 
-#Auth::routes();
-Auth::routes(['verify' => true]);
+Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 #Route::get('/paypal/pay', 'PaymentControllerPayPal@payWithPayPal');
