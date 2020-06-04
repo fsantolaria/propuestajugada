@@ -4,14 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v4.0.1">
-    <title>Pricing example · Bootstrap</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/pricing/">
+    <title>PropuestaJugada.com</title>
 
     <!-- Bootstrap core CSS -->
-<link href="/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -31,7 +27,8 @@
     </style>
     <!-- Custom styles for this template -->
     <link href="/assets/css/pricing.css" rel="stylesheet">
-  </head>
+    <link href="/assets/css/carousel.css" rel="stylesheet">
+</head>
   <body>
    <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -51,7 +48,7 @@
 						<li class="nav-item active">
 							<a class="nav-link" href="{{ route('login') }}">Inicio</a>
 						</li>
-                      
+
                     @endauth
                 <!-- </div> -->
         @endif
@@ -67,7 +64,7 @@
 
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
   <h1 class="display-4">Planes</h1>
-  <p class="lead">Propuesta Juga le presenta tres planes para poder disfrutar de exceltes y exclusivos beneficios</p>
+  <p class="lead">Para terminar la suscripcion debe adherirse a uno de nuestros  tres planes para poder disfrutar de exceltes y exclusivos beneficios</p>
 </div>
 
 <div class="container">
@@ -84,7 +81,7 @@
           <li></li>
           <li>Asesoramiento Financiero</li>
         </ul>
-        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Suscribirse</button>
+        <button type="button" class="btn btn-lg btn-block btn-primary">Suscribirse</button>
       </div>
     </div>
     <div class="card mb-4 shadow-sm">
@@ -125,7 +122,7 @@
         <img class="mb-2" src="/bootstrap/bootstrap-solid.svg" alt="" width="24" height="24">
         <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
       </div>
-    
+
     </div>
   </footer>
 </div>
