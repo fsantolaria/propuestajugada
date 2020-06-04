@@ -68,6 +68,10 @@
                                 </button>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label for="captcha" class="col-md-4 control-label"></label>
+                            <div class="g-recaptcha col-md-6" data-sitekey="{{ env('RECAPTCHA_SITE') }}"></div>
+                        </div>
                     </form>
                 </div>
             </div>
