@@ -13,8 +13,6 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
     {!! htmlScriptTagJsApi([
         'action' => 'homepage',
-        'callback_then' => 'callbackThen',
-        'callback_catch' => 'callbackCatch'
     ]) !!}
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
