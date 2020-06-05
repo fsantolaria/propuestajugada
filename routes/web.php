@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,4 +24,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 #Route::get('/paypal/pay', 'PaymentControllerPayPal@payWithPayPal');
 #Route::get('/paypal/status', 'PaymentControllerPayPal@payPalStatus');
+Route::get('/clear-cache', function() {
+    $exitCode = Artisan::call('config:clear');
+    $exitCode = Artisan::call('cache:clear');
+    $exitCode = Artisan::call('config:cache');
+    return 'DONE'; //Return anything
+});
 

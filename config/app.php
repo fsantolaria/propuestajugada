@@ -177,6 +177,7 @@ return [
 
         // Otros Providers...
         SantiGraviano\LaravelMercadoPago\Providers\MercadoPagoServiceProvider::class,
+        Biscolab\ReCaptcha\ReCaptchaServiceProvider::class,
         /*
         * Application Service Providers...
         */
@@ -235,7 +236,7 @@ return [
 
         // Otros Aliases
         'MP' => SantiGraviano\LaravelMercadoPago\Facades\MP::class,
-
+        'ReCaptcha' => Biscolab\ReCaptcha\Facades\ReCaptcha::class,
     ],
 
 ];
