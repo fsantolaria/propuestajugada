@@ -77,7 +77,7 @@
         <h1 class="card-title pricing-card-title">$ 9,90<small class="text-muted">/ mes</small></h1>
         <ul class="list-unstyled mt-3 mb-4">
           <li>1 número de loteria</li>
-          <li>Seguro Familiar</li>
+          <li></li>
           <li></li>
           <li>Asesoramiento Financiero</li>
         </ul>
@@ -92,8 +92,8 @@
         <h1 class="card-title pricing-card-title">$ 18,90 <small class="text-muted">/ mes</small></h1>
         <ul class="list-unstyled mt-3 mb-4">
           <li>2 numeros de Loteria</li>
-          <li>Seguro Familiar</li>
-          <li></li>
+          <li>Premios especiales</li>
+          <li>Sistema de puntaje</li>
           <li>Asesoramiento Financiero</li>
         </ul>
         <button type="button" class="btn btn-lg btn-block btn-primary">Suscribirse</button>
@@ -107,8 +107,8 @@
         <h1 class="card-title pricing-card-title">$ 28,90 <small class="text-muted">/ mes</small></h1>
         <ul class="list-unstyled mt-3 mb-4">
           <li>3 numeros de loteria</li>
-          <li>Seguro Familiar</li>
-          <li>Club VIP</li>
+          <li>Sistema de Puntaje Premium</li>
+          <li>Premios especiales</li>
           <li>Asesoramiento Financiero</li>
         </ul>
         <button type="button" class="btn btn-lg btn-block btn-primary">Suscribirse</button>

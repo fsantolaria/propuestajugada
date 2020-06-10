@@ -133,13 +133,13 @@
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></svg>
         <h2>Plan Plata</h2>
-        <p>Plan Plata es un plan de Riesgo, se juega tres numero de una importarte loteria mundial.</p>
+        <p>Plan Plata es un plan de Riesgo, se juegan dos numeros de una importarte loteria mundial.</p>
         <p><a class="btn btn-secondary" href="#" role="button">Plan Plata &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></svg>
         <h2>Plan Oro</h2>
-        <p>Plan Oro es un plan de Riesgo, se juega seis numeros de una importarte loteria mundial.</p>
+        <p>Plan Oro es un plan de Riesgo, se juegan tres numeros de una importarte loteria mundial.</p>
         <p><a class="btn btn-secondary" href="#" role="button">Plan Oro &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
@@ -164,7 +164,7 @@
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
         <h2 class="featurette-heading">Lo importante de estar protegido <span class="text-muted"></span></h2>
-        <p class="lead">Prouesta Jugada por tu suscripción ademas de capitalizar dinero piensa en tu capital mas preciado tu familia facilitandote un seguro</p>
+        <p class="lead">Prouesta Jugada por tu suscripción ademas de capitalizar dinero piensa en tu tesoro mas preciado tu familia.</p>
       </div>
       <div class="col-md-5 order-md-1">
         <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="/assets/img/family-seguro.jpg" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"></img>
