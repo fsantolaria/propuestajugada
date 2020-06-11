@@ -152,7 +152,7 @@
     <div class="row featurette">
       <div class="col-md-7">
         <h2 class="featurette-heading">¿ Que Harías con 10.000.000 U$S ? <span class="text-muted">Suscribase y sea uno de nuestros afortunados ganadores</span></h2>
-        <p class="lead">Propuesta Jugada te da la posibilidad de participar de sorteos en las principales loterias del mundo y poder capitalizar dinero con una minima inversión.</p>
+        <p class="lead">Propuesta Jugada te da la posibilidad de participar de sorteos en las principales loterias del mundo y hacer rentable su dinero con una minima inversión.</p>
       </div>
       <div class="col-md-5">
         <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="/assets/img/money-millon.jpg" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"></img>
