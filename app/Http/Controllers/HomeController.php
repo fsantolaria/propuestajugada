@@ -1,8 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\NumerosSorteo;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
+use App\PlanUsuario;
 
 use Illuminate\Http\Request;
 
@@ -28,7 +31,15 @@ class HomeController extends Controller
         $id=Auth::user()->id;
         $condicion=DB::table('plan_usuarios')->where('user_id', $id)->exists();
         if ($condicion) {
-            return view('home');
+            $plan=PlanUsuario::all();
+
+            $numeros=DB::table('numeros_sorteos')
+            ->join('numeros_usuarios','numeros_sorteos.id','=','numeros_usuarios.numero_id')
+            ->select('numeros_sorteos.numero')
+            ->where('numeros_usuarios.user_id',$id)
+            ->get();
+
+           return view('home', compact('plan','numeros'));
         }
         else{
             return view('subscriptionPlan');

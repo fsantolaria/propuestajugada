@@ -1,0 +1,65 @@
+/*Downloaded from https://www.codeseek.co/Ceryni17/lottery-balls-rolling-in-XEexme */
+body {
+    background: #444;
+    font: 16px/1 Helvetica, Arial, sans-serif;
+    padding-top: 100px;
+  }
+
+  p {
+    color: #ffffff;
+  }
+
+  .columns {
+    position: relative;
+  }
+
+  .ball {
+    position: absolute;
+    left: -50px;
+    width: 40px;
+    height: 40px;
+    background: #004E99;
+    border-radius: 50%;
+    transition: all 0.7s ease-out;
+    bottom: 55px;
+    opacity: 0;
+  }
+  .ball.drop {
+    bottom: 10px;
+  }
+  .ball > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  .ball > div > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 22.8571428571px;
+    height: 22.8571428571px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ball.blue {
+    background: linear-gradient(to right, #536976, #292e49);
+  }
+  .ball.red {
+    background: linear-gradient(to right, #da4453, #89216b);
+  }
+  .ball.green {
+    background: linear-gradient(to right, #00b09b, #96c93d);
+  }
+  .ball.yellow {
+    background: linear-gradient(to right, #ffe259, #ffa751);
+  }
