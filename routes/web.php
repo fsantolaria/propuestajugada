@@ -22,7 +22,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-#Route::get('/paypal/pay', 'PaymentControllerPayPal@payWithPayPal');
+Route::get('/paypal/pay', 'PaymentControllerPayPal@payWithPayPal');
 #Route::get('/paypal/status', 'PaymentControllerPayPal@payPalStatus');
 Route::get('/clear-cache', function() {
     $exitCode = Artisan::call('config:clear');
